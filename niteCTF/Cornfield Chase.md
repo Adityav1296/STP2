@@ -17,6 +17,6 @@ Authors: kua_23 | kafka
 
 - In the second image, the pole clearly shows a plate with certain numbers and alphabets on it. That was the most important clue in solving this challenge.
 - Searching online, I found these two sites that contained information on how to read through those plates.
-   1. (Taiwan Power Company Grid)[https://wiki.osgeo.org/wiki/Taiwan_Power_Company_grid]
-   2. (Plonk It : Taiwan)[https://www.plonkit.net/taiwan]
+   1. [Taiwan Power Company Grid](https://wiki.osgeo.org/wiki/Taiwan_Power_Company_grid)
+   2. [Plonk It : Taiwan](https://www.plonkit.net/taiwan)
 - Going through them, I identified the region in the pic. It turned out to be `Puzi City` in `Taiwan`. Then I roamed around using google street view and found the correct area which gave me the flag.
