@@ -137,7 +137,7 @@ Cmd #16 @ 0x27ff70: (
 
 - Here, I clearly got a base64 ciphered text: 
 
-> ciphered text: Ymkwc2N0Znt3M2xjMG0zXw==
+> ciphered text: Ymkwc2N0Znt3M2xjMG0zXw==  
 > deciphered text: bi0sctf{w3lc0m3_
 
 - Now I got the first part of the flag out of many and I know that all the flag files will be labelled as flag[number]. So that was a big clue to finding the other flags.
@@ -168,7 +168,7 @@ HomeGroupUser$:1002:aad3b435b51404eeaad3b435b51404ee:bda4ed0acc67d6d60540d1a20cf
 ```
 - From the flag5.rar, I got the 5th part of the flag:
 
-> ciphered text in flag5.rar: bTByM18xMzMzNzQzMX0= 
+> ciphered text in flag5.rar: bTByM18xMzMzNzQzMX0=  
 > deciphered text: m0r3_13337431}
 
 - Now I had 2 parts of the flag. Next, I tried the `notepad.exe` process. I assumed that since it is notepad, the flag might have been written somewhere in its memory. So first I dumped the memory of this process and then searched for flag2, flag3, flag4 through it:
@@ -201,9 +201,9 @@ flag4 = YjNuM2YxNzVfeTB1Xw==
 
 - Fortunately, I was able to retrieve flag3 and flag4 from this process:
 
-> flag 3 cipher text: aDBwM190aDE1Xw==
-> flag 3 deciphered text: _h0p3_th15_
-> flag 4 cipher text: YjNuM2YxNzVfeTB1Xw==
+> flag 3 cipher text: aDBwM190aDE1Xw==  
+> flag 3 deciphered text: _h0p3_th15_  
+> flag 4 cipher text: YjNuM2YxNzVfeTB1Xw==  
 > flag 4 deciphered text: b3n3f175_y0u_
 
 - Now, the only part that remained was flag2 and I still had 3 processes where it could potentially be present. I started with `mspaint.exe`. Since it is a paint process, I was skeptical whether the flag could be searched through in its memory like I did with notepad. But I still dumped its memory and ran a search for flag2 through it but nothing turned up. Now I was sure that the flag is probably an image. 
