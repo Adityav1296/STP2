@@ -15,4 +15,9 @@ To solve the lab, execute the whoami command to determine the name of the curren
   
 - After looking at the GET request, at the bottom, the productId and the storeId were being sent to retrieve the data from the server. So, I added the `whoami` commands after the storeId and got the current user's name: 
 
-    <img width="927" height="650" alt="Screenshot 2025-12-23 091745" src="https://github.com/user-attachments/assets/dadf5935-1e31-49b0-ae3f-2e70189b31eb" />
+  <img width="927" height="650" alt="Screenshot 2025-12-23 091745" src="https://github.com/user-attachments/assets/dadf5935-1e31-49b0-ae3f-2e70189b31eb" />
+
+- Some other characters that we can use are:
+  1. & (can work when 1 commands runs in the background while the second command is also being executed)
+  2. && (behaves like an AND statement and executes only when the first command is a success)
+  3. || (behaves like an OR statement and executes when the first command fails) 
