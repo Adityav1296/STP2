@@ -10,9 +10,10 @@ To solve this lab, perform a cross-site scripting attack that calls the alert fu
 - After lauching the challenge, I first inspected the code of the page but didn't find anything. So, I just randomly typed a name in the search box shown on the page. After the search results were loaded, I again inspected the page's code and searched for the name specifically.
 - This time it showed me the name appearing in two locations:
 
-    pic
+    <img width="1086" height="237" alt="Screenshot 2026-01-03 162621" src="https://github.com/user-attachments/assets/b4457b1c-99ff-419b-aea6-91a691605983" />
 
-- In the second location, where the name appears in the `src` attribute of the `img` tag, a script is also present above it. That script takes the value written in the `search` parameter of the URL and then calls the `trackSearch(query)` function which uses document.write to write the search term in the `src` attribute.
+
+- In the second location, where the name appears in the `src` attribute of the `img` tag, a script is also present above it. That script takes the value written in the `search` parameter of the URL and then calls the `trackSearch(query)` function which uses `document.write` to write the search term in the `src` attribute.
 - So, after finding where the solution might appear for the lab, I had to find a way to execute the `alert()` function. For that, I included double quotes in my search query to break out of the `src` attribute before adding the `onload` attribut to it. Final payload: `carlos"onload="alert(9)"`
 
-    pic
+    <img width="820" height="190" alt="Screenshot 2026-01-03 162956" src="https://github.com/user-attachments/assets/6b20eaee-3dc8-491f-b165-5f1b9401eb9c" />
